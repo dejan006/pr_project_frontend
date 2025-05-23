@@ -22,7 +22,7 @@ export const postSecret = async ({loginValues, content}) => {
             body: JSON.stringify({
                 email: loginValues.email,
                 encryptPassword: loginValues.password,
-                content: content
+                content: JSON.stringify(content)
             })
         });
 
